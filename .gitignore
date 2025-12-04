@@ -3,3 +3,6 @@ node_modules/
 
 # .env variables are also available in
 # the repository settings for security reasons
+
+# Supabase
+.supabase/
