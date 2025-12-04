@@ -7,7 +7,7 @@ A RESTful API providing comprehensive access to Formula 1 racing data from 2019-
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ## Live API
 
-**Base URL:** `https://comp4513.assignment1.adhillon.net`
+**Base URL:** `https://comp4513assignment1.adhillon.net`
 
 **Test the API:** [https://comp4513assignment1.adhillon.net/](https://comp4513assignment1.adhillon.net/)
 
@@ -164,7 +164,7 @@ This API is deployed on [Render](https://render.com) with the following configur
 - `SUPABASE_URL` - Your Supabase project URL
 - `SUPABASE_KEY` - Your Supabase anon/public key
 
-**Custom Domain:** `comp4513.assignment1.adhillon.net`
+**Custom Domain:** `comp4513assignment1.adhillon.net`
 
 ### Deployment Steps
 

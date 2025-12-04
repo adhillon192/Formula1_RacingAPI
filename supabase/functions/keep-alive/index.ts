@@ -16,7 +16,7 @@ serve(async (req) => {
 
   try {
     // Get the API URL from environment variable or use the default
-    const apiUrl = Deno.env.get('API_URL') || 'https://comp4513.assignment1.adhillon.net';
+    const apiUrl = Deno.env.get('API_URL') || 'https://comp4513assignment1.adhillon.net';
     
     console.log(`Pinging API at: ${apiUrl}`);
     

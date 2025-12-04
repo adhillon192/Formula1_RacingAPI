@@ -38,14 +38,14 @@ supabase functions deploy keep-alive
 
 5. Set the required environment variable:
 ```bash
-supabase secrets set API_URL=https://comp4513.assignment1.adhillon.net
+supabase secrets set API_URL=https://comp4513assignment1.adhillon.net
 ```
 
 ### Environment Variables
 
 The edge function requires the following environment variable:
 
-- `API_URL`: The URL of the main API to ping (defaults to `https://comp4513.assignment1.adhillon.net`)
+- `API_URL`: The URL of the main API to ping (defaults to `https://comp4513assignment1.adhillon.net`)
 
 ### Testing Locally
 
