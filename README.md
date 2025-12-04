@@ -7,7 +7,7 @@ A RESTful API providing comprehensive access to Formula 1 racing data from 2019-
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ## Live API
 
-**Base URL:** `https://comp4513.assignment1.adhillon.net`
+**Base URL:** `https://comp4513assignment1.adhillon.net`
 
 **Test the API:** [https://comp4513assignment1.adhillon.net/](https://comp4513assignment1.adhillon.net/)
 
@@ -164,7 +164,7 @@ This API is deployed on [Render](https://render.com) with the following configur
 - `SUPABASE_URL` - Your Supabase project URL
 - `SUPABASE_KEY` - Your Supabase anon/public key
 
-**Custom Domain:** `comp4513.assignment1.adhillon.net`
+**Custom Domain:** `comp4513assignment1.adhillon.net`
 
 ### Deployment Steps
 
@@ -174,6 +174,14 @@ This API is deployed on [Render](https://render.com) with the following configur
 4. Deploy automatically on push
 
 **Note:** Free tier apps sleep after 15 minutes of inactivity. First request may take 30-60 seconds to wake up.
+
+### Keep Alive Mechanism
+
+To prevent the API from sleeping due to inactivity, we use a Supabase Edge Function that is triggered by GitHub Actions every 4 days:
+
+1. **Edge Function:** Located in `supabase/functions/keep-alive/`, this Deno-based function pings the API endpoint
+2. **GitHub Actions:** The workflow in `.github/workflows/keep-supabase-alive.yml` runs every 4 days
+3. **Deployment:** See [Supabase Functions README](supabase/functions/README.md) for deployment instructions
 
 ---
 
