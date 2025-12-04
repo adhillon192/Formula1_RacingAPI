@@ -27,8 +27,6 @@ serve(async (req) => {
         'User-Agent': 'Supabase-Keep-Alive-Function',
       },
     });
-
-    const responseText = await response.text();
     
     console.log(`API responded with status: ${response.status}`);
     
